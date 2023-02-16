@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    android:orientation="vertical"
+    tools:context=".PreImplicitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="Buttons for some Examples of Implicit Intent:"
+            android:textColor="#ACBFA4"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A26769"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:text="Open Google" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="#A26769"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="Call Omar Ameer" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A26769"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:text="Send Email to Omar Ameer" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:background="#E2E8CE" />
+
+
+        <Button
+            android:id="@+id/btn_implicit_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#FF7F11"
+            android:textColor="@color/white"
+            android:text="Back to Main Menu"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_implicit_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#FF7F11"
+            android:textColor="@color/white"
+            android:text="Go to the Next Topic"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</LinearLayout>

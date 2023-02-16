@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Name:"
+            android:textColor="#E2E8CE"
+            android:textSize="20sp"
+            tools:ignore="NestedWeights" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="#E2E8CE"
+            android:ems="10"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:textColor="#E2E8CE"
+            android:textColorHint="#E2E8CE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Password:"
+            android:textColor="#E2E8CE"
+            android:textSize="20sp"
+            tools:ignore="NestedWeights" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:autofillHints=""
+            android:backgroundTint="#E2E8CE"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textColor="#E2E8CE"
+            android:textColorHint="#E2E8CE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Email:"
+            android:textColor="#E2E8CE"
+            android:textSize="20sp"
+            tools:ignore="NestedWeights" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:autofillHints=""
+            android:backgroundTint="#E2E8CE"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textEmailAddress"
+            android:textColor="#E2E8CE"
+            android:textColorHint="#E2E8CE" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btn_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#A26769"
+            android:text="show name"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_name"
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#A26769"
+            android:textColor="@color/white"
+            android:text="show password"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_pass"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#A26769"
+            android:textColor="@color/white"
+            android:text="show email"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_user_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_email"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#FF7F11"
+            android:text="Back to Main Menu"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_user_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_toast_user_back"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#FF7F11"
+            android:text="Go to the Next Topic"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</LinearLayout>

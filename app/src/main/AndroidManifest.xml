@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".ButtonsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ControlsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FileActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".FileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPrefActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPrefActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreImplicitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LifeCycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeamsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ToastUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreTransferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreCalcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
